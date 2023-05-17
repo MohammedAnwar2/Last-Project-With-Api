@@ -16,3 +16,25 @@ return GestureDetector(
       body:TextField()
       ));
 ```
+
+5- من اجل جعل الخط يتمدد
+```dart
+Flexible(
+child: Padding(
+  padding: const EdgeInsets.all(8.0),
+  child: SizedBox(
+    width: Get.width,
+    child: FittedBox(
+      fit: BoxFit.fill,
+      child: Text(
+        "50 %\nOFF",
+        style: GoogleFonts.asap(color: Theme
+            .of(context)
+            .cardColor,  fontWeight: FontWeight.bold),
+        maxLines: 2,
+      ),
+    ),
+  ),
+),
+)
+```
