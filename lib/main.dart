@@ -20,6 +20,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeScreens().theme,
       debugShowCheckedModeBanner: false,
       initialBinding: MyBinding(),
+      initialRoute: "/",
       getPages: route,
     );
   }
