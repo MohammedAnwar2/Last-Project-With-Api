@@ -86,3 +86,27 @@ class UserController extends GetxController {
                 errorWidget: const Icon(IconlyBold.danger,color: Colors.red,size: 28,),//flutter_iconly بكج الايكونات
               ))
 ```
+
+
+9 - فينا نستخدم ال Alin  لجعل الشيء بالنص و مثال على استخدامه بداخل ال  Stack بدون عمل Positined ووجع رأس
+```dart
+Stack(
+        children: [
+          ClipRRect(
+              borderRadius: BorderRadius.circular(12),
+              child: FancyShimmerImage(
+                imageUrl: category.image.toString(),
+                height: Get.height*.45,
+                width: Get.width*.45,
+                errorWidget: const Icon(IconlyBold.danger,color: Colors.red,size: 28,),
+              )),
+          Align(
+              alignment: Alignment.center,
+              child: Text(category.name.toString(),
+                  style: GoogleFonts.aBeeZee(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      backgroundColor: lightCardColor.withOpacity(.5))))
+        ],
+      )
+```
