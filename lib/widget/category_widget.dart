@@ -16,7 +16,6 @@ class CategoryWidget extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: Stack(
-        fit: StackFit.loose,
         children: [
           ClipRRect(
               borderRadius: BorderRadius.circular(12),

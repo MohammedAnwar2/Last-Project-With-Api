@@ -5,6 +5,7 @@ import 'package:last_project_with_api/model/user_model.dart';
 
 class CountsOfControllers
 {
+  //كل ذا من اجل التخزين ومعرفة ال Length
   static  List<ProductModel> product=[];
   static  List<CategoryModel> category=[];
   static  List<UserModel> user=[];
