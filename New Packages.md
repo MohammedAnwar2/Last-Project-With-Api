@@ -123,4 +123,4 @@ PageRouteBuilder TransitionPage({required Widget screen,required Alignment align
 }
 ```
 
-11- لا يظهر ال splash عند استخدام ال Container مع لون لذا فيك تستخم حاجه افضل لكن برضو بدون لووون لو تبي ال splash يظهر طبعا مع Inkwel فيك تستخدم Material تشبه لل Container  لكن بدون لوون 
+11- لا يظهر ال splash عند استخدام ال Container مع لون لذا فيك تستخم حاجه افضل لكن برضو بدون لووون لو تبي ال splash يظهر طبعا مع Inkwel فيك تستخدم Material تشبه لل Container  لكن بدون لوون . برضو فيك تستخدم ال Contaner  لكن لا تحدد لها لوووون 
