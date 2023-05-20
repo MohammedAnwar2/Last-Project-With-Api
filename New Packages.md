@@ -39,7 +39,7 @@ child: Padding(
 )
 ```
 
-6- card_swiper: ^2.0.4 >> التقلب بين الصفحات
+6- card_swiper: ^2.0.4 >>  التقلب بين الصفحات بطريقة حلو , ادخل للبرنامج وراح تشوف الطريقه
 
 
 7 - اذا عندنا List وبداخلها  map  نستخدم الطريقة الاتية من اجل عمل Get  من ال Api
@@ -88,7 +88,7 @@ class UserController extends GetxController {
 ```
 
 
-9 - فينا نستخدم ال Alin  لجعل الشيء بالنص و مثال على استخدامه بداخل ال  Stack بدون عمل Positined ووجع رأس
+9 - فينا نستخدم ال Align  لجعل الشيء بالنص و مثال على استخدامه بداخل ال  Stack بدون عمل Positined ووجع رأس
 ```dart
 Stack(
         children: [
@@ -109,4 +109,16 @@ Stack(
                       backgroundColor: lightCardColor.withOpacity(.5))))
         ],
       )
+```
+
+10 - 
+```dart
+PageRouteBuilder TransitionPage({required Widget screen,required Alignment alignment})
+{
+  return PageRouteBuilder( transitionDuration: Duration(milliseconds: 300),transitionsBuilder: (context, animation, secondaryAnimation, child) {
+    return ScaleTransition(scale: animation,alignment: alignment, child: child);
+  }, pageBuilder: (BuildContext context, Animation<double> animation, Animation<double> secondaryAnimation) {
+    return  screen;
+  },);
+}
 ```
