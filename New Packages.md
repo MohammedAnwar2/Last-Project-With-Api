@@ -72,3 +72,17 @@ class UserController extends GetxController {
   }
 }
 ```
+
+
+8- الصوره تظهر كأنها متحركه عند محاولة جلب البيانات من ال Api نستخد ال fancy_shimmer_image: ^2.0.2
+
+```dart
+          ClipRRect(
+              borderRadius: BorderRadius.circular(12),
+              child: FancyShimmerImage(
+                imageUrl: category.image.toString(),
+                height: Get.height*.45,
+                width: Get.width*.45,
+                errorWidget: const Icon(IconlyBold.danger,color: Colors.red,size: 28,),//flutter_iconly بكج الايكونات
+              ))
+```
