@@ -111,7 +111,7 @@ Stack(
       )
 ```
 
-10 - 
+10 - باستخدام ال page_transition: ^2.0.9 نقدر ننتقلب بين الصفحلت مع انيماشن حلو , ادخل البرنامج وشف الطريقة...كبعا يستخدم مع الNavigator ولا يستخدم مع Get.to() مثلا 
 ```dart
 PageRouteBuilder TransitionPage({required Widget screen,required Alignment alignment})
 {
